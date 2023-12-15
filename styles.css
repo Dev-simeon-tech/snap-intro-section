@@ -84,7 +84,7 @@ li{ list-style: none;}
 }
 .primary-header::before{
     content: '';
-    position: absolute;
+    position: fixed;
     height: 100%;
     top: 0;
     left:100% ;
@@ -267,7 +267,7 @@ li{ list-style: none;}
         padding-top:0 ;
     }
     .dropdown-list li +  li {
-        padding-top: 16px;
+        padding-top: 12px;
     }
     .drop-1{
         left: -100%; 
@@ -292,7 +292,7 @@ li{ list-style: none;}
     }
     .hero-img{
         content: url('images/image-hero-desktop.png');
-        width: 500px; 
+        width: 480px; 
     }
     .hero h1{
         font-size: clamp(1rem,3.9vw + 1rem,6rem);
