@@ -75,7 +75,7 @@ li{ list-style: none;}
     position: fixed;
     background-color: var(--Almost-White);
     width: 70%;
-    right: -160%;
+    right: -100%;
     top: 0;
     height: 100vh;
     padding: 1.5rem;
@@ -85,12 +85,13 @@ li{ list-style: none;}
 .primary-header::before{
     content: '';
     position: fixed;
+    display: none;
     height: 100%;
     top: 0;
-    left:100% ;
+    left:0;
     background-color: rgba(0,0,0,0.75);
-    width: 50%;
-    transition: left 0.3s ease-in-out; 
+    width: 100%;
+   
 }
 
 .list-nav a{
@@ -151,7 +152,7 @@ li{ list-style: none;}
     right: 0;
 }
 .primary-header[data-overlay]::before{
-    left: 0;
+    display: block;
 }
 /* sidebar styles*/
 .hero__content{
@@ -187,7 +188,7 @@ li{ list-style: none;}
 .clients img{
     width: 60px;
 }
-@media(min-width:980px){
+@media(min-width:860px){
     /* header styles */
     .menu-icon,.icon-close{
         display: none;

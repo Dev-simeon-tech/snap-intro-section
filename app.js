@@ -7,8 +7,6 @@ const dropdownItems = document.querySelectorAll('.dropdown-item');
 menuIcon.addEventListener('click',()=>{
     primaryNav.toggleAttribute('data-visible')
 
-   
-
     menuIcon.setAttribute('aria-expanded',true);
     closeIcon.setAttribute('aria-expanded',false);
     primaryHeader.toggleAttribute('data-overlay')
@@ -24,9 +22,7 @@ closeIcon.addEventListener('click',()=>{
 })
 
 dropdownItems.forEach((item)=>{
-    // item.addEventListener('click',()=>{
-    //     item.classList.toggle('active')
-    // })
+   
    const itemName = item.querySelector('.dropdown-item__name');
     itemName.addEventListener('click',()=>{
         item.classList.toggle('active');
