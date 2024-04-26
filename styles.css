@@ -34,7 +34,7 @@ select{
     font: inherit;
     color: inherit;
 }
-img,picture{
+img,picture,svg{
     max-width: 100%;
     display: block;
 }
@@ -59,6 +59,7 @@ li{ list-style: none;}
     background-color: var(--Almost-White);
     min-height:100vh ;
     overflow-x:hidden  ;
+    position: relative;
   
 }
 .primary-header{
@@ -80,9 +81,9 @@ li{ list-style: none;}
     height: 100vh;
     padding: 1.5rem;
     color: var(--Medium-Gray);
-    transition: right 0.3s ease-in-out; 
+    transition: right 0.3s ease-in-out ;
 }
-.primary-header::before{
+.hero::before{
     content: '';
     position: fixed;
     display: none;
@@ -90,8 +91,7 @@ li{ list-style: none;}
     top: 0;
     left:0;
     background-color: rgba(0,0,0,0.75);
-    width: 100%;
-   
+    width: 100%;   
 }
 
 .list-nav a{
@@ -151,8 +151,8 @@ li{ list-style: none;}
 .primary-navigation[data-visible]{
     right: 0;
 }
-.primary-header[data-overlay]::before{
-    display: block;
+.hero[data-overlay]::before{
+    display: block;   
 }
 /* sidebar styles*/
 .hero__content{
@@ -193,7 +193,7 @@ li{ list-style: none;}
     .menu-icon,.icon-close{
         display: none;
     }
-    .primary-header[data-overlay]::before{
+    .hero[data-overlay]::before{
         display: none;
     }
     .primary-header{
